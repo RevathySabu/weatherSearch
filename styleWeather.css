@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(66, 121, 183);
+}
+
+.container{
+    background: #9dd3ec;
+    position: relative;
+    width: 400px;
+    /* height: 555px; */
+    border-radius: 16px;
+    padding: 20px;
+    /* color: blue; */
+}
+
+.weather-box{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.weather-box .temperature{
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 20px 0 6px -30px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.weather-box .description{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+.weather .humidity,
+.weather .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 60px;
+    margin-bottom: -40px;
+}
+
+/* .weather .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+} */
